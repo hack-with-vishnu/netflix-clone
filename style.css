@@ -11,21 +11,34 @@ body{
 .nav{
     position: fixed;
     top: 0;
-    width: 100;
+    left: 0; /* Changed width to left for proper positioning */
+    width: 200px; /* Fixed width for navigation bar */
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    background-color: #222; /* Added background color */
     z-index: 1;
     transition-timing-function: ease-in;
     transition: all 0.5s;
 }
 
-
 .logo{
     width: 80px;
     object-fit: contain;
 }
+
 .avatar{
-    width: 30;
+    width: 30px;
     object-fit: contain;
+}
+
+a {
+  color: #fff; 
+  text-decoration: none; 
+  padding: 5px 10px; 
+  transition: all 0.3s; 
+}
+
+a:hover {
+  background-color: #333; 
 }
